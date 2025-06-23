@@ -1,0 +1,19 @@
+Django==4.2.11
+djangorestframework==3.14.0
+mongoengine==0.27.0
+
+# MongoDB driver
+pymongo[srv]==3.12.3
+
+# Herramientas de linting y formateo
+black==24.4.2
+flake8==7.0.0
+isort==5.13.2
+
+# Si estás usando Python-dotenv para gestionar variables de entorno
+python-dotenv==1.0.1
+
+gunicorn
+django-cors-headers
+drf-spectacular
+pyjwt

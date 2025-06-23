@@ -1,0 +1,14 @@
+FROM python:3.11-slim
+
+RUN mkdir /home/backend
+
+WORKDIR /home/backend
+
+COPY requirements.txt /home/backend
+
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+COPY . /home/backend
+
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
